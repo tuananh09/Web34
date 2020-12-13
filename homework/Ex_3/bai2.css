@@ -1,0 +1,195 @@
+body{
+	margin: 5px;
+	background-image: url('images3/tuyet.jpg');
+	font-family: Arial;
+	font-size: 12px;
+}
+
+#formTong{
+	width: 800px;
+	height: 1360px;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto; 
+	border: 4px solid #fff;
+}
+
+#banner{
+	width: 100%;
+	height: 300px;	
+}
+#banner img{
+	width: 100%;
+	height: 100%;
+}
+
+#menu{
+	width: 100%;
+	height: 40px;
+	background-image: url('images3/menu.gif');
+}
+#menu ul{
+	margin: 0px;
+	padding: 0px;
+}
+#menu ul li{
+	list-style: none;
+	float: left;
+}
+
+#menu ul li a{
+	text-decoration: none;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color: #e9580d;
+	padding: 0px 10px 0px 10px;
+	border-right: 1px solid #200b01;
+}
+
+a:hover{
+	background-color: #d2dddd;
+}
+
+#main{
+	width: 100%;
+	height: 950px;
+}
+
+#left{
+	width: 20%;
+	height: 100%;
+	background-color: white;
+	float: left;
+}
+.menuMinTrai{
+	width: 150px;
+	border: 1px solid #200b01;
+}
+
+p{
+	margin-left: 5px;
+}
+
+#left p:hover{
+	color: red;
+}
+
+.nenTrai{
+	width: 150px;
+	height: 30px;
+	background-image: url('images3/menu_bar.gif');
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 0px;
+}
+
+.anhNho img{
+	width: 150px;
+	height: 160px;
+}
+
+#content{
+	width: 60%;
+	height: 100%;
+	float:left;
+}
+
+.click:hover{
+	color: purple;
+}
+
+#content img{
+	width: 160px;
+	height: 110px;
+	border: 2px solid #fff;
+}
+
+#content .textTrai img{
+	float: left;
+	padding-right: 5px;
+}
+
+#content .textPhai img{
+	float: right;
+	padding-left: 5px;
+}
+
+.textPhai{
+	margin-top: 5px;
+}
+
+.textTrai{
+	margin-top: 5px;
+}
+
+#content p{
+	text-align: justify;
+}
+
+#content .gioithieu{
+	border: 2px solid red;
+  	border-radius: 12px;
+  	background-color: #f4a536e6;
+}
+
+#content .trai{
+	height: 26px;
+	line-height: 26px;
+	color: #fff;
+	background-image: url('images3/main_bar_left.gif');
+	padding-left: 5px;
+}
+
+#content .phai{
+	height: 26px;
+	line-height: 26px;
+	text-align: right;
+	color: #fff;
+	background-image: url('images3/main_bar_right.gif');
+	padding-right: 5px;
+}
+
+#content .a{
+	color: #f4a536e6;
+}
+
+#content .b{
+	text-align: right;
+	color: #f4a536e6;
+}
+
+#right{
+	width: 19%;
+	height: 100%;
+	float: left;
+	padding-left: 7px;
+}
+
+#right p:hover{
+	color: red;
+}
+
+.nenPhai{
+	width: 150px;
+	height: 30px;
+	background-image: url('images3/menu_bar.gif');
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 0px;
+}
+.menuMinPhai{
+	width: 150px;
+	border: 1px solid #200b01;
+}
+
+#footer{
+	width: 100%;
+	height: 40px;
+	background-image: url('images3/menu_footer.gif');
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+}

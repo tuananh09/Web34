@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		#div1{
+			color: blue;
+		}
+
+		/* + thẻ gần nhất*/
+		/* > thẻ con giống thuộc tính thẻ cha*/
+		/* ~ tất cả các thẻ cùng bậc*/
+		#div1 ~ p{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">
+		<p>The P1</p>
+		<p>The P2</p>
+			<div>
+				<p>The trong div con</p>
+			</div>
+	</div>
+	<p>the p1 ngoai div1</p>
+	<p>the p1 ngoai div1</p>
+</body>
+</html>
