@@ -10,15 +10,21 @@
 }
 
 #menu>li{
+	height: 40px;
 	float: left;
 	color: #fff;
 	list-style: none;
 	line-height: 40px;
-	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
 	padding: 0px 10px;
 	position: relative; 
 }
 
+#menu>.seach{
+	float: right;
+	right: 20px;
+	border-left:1px solid #618d04;
+}
 #menu>li:hover{
 	background-color: red;
 }
@@ -28,7 +34,7 @@
 	display: none;
 	width: 180px;
 	background-color: red;
-	 
+	left: -30px;
 }
 
 .absolute>li{
@@ -36,6 +42,7 @@
 	list-style: none;
 	padding: 0px 10px;
 	border-bottom: 1px solid #ccc;
+
 }
 
 .absolute>li:hover{
