@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#Boss{
+	width: 100%;
+	height: 590px;
+	background-image: url('img4/bg1.jpg');
+
+}
+
+#menuTop{
+	padding-top: 20px; 
+	padding-left: 20px; 
+	margin: 20px;
+}
+
+#menuTop h4{
+	float: left;
+}
+
+#menuTop ul{
+	padding-left: 600px;
+}
+
+#menuTop ul li{
+	float: left;
+	margin-left: 20px;
+	list-style: none;
+	text-align: right;
+}
+
+#menuTop ul li:hover{
+	background-color: #ccc;
+	border-radius: 5px;
+}
+
+#mainLeft ul{
+	margin-top: 50px;
+}
+#mainLeft ul li{
+	padding-left:30px;
+	margin-top: 5px;
+	list-style: none;
+	clear: left;
+}
+
+#mainLeft ul li:hover{
+	color: #3cb9ba;
+}
+
+#anh1{
+	position: fixed;
+	top: 90px;
+	left: 240px;
+}
+
+#anh2{
+	position: fixed;
+	top: 90px;
+	left: 430px;
+}
+
+#anh3{
+	position: fixed;
+	top: 90px;
+	left: 620px;
+}
+
+#anh4{
+	position: fixed;
+	top: 250px;
+	left: 240px;
+}
+
+#anh5{
+	position: fixed;
+	top: 250px;
+	left: 430px;
+}
+
+#anh6{
+	position: fixed;
+	top: 250px;
+	left: 620px;
+}
+
+#anh7{
+	position: fixed;
+	top: 410px;
+	left: 240px;
+}
+
+#absolute .a1{
+	background-color: black;
+	opacity: 0.25;
+	position: absolute;
+	bottom: 1px;
+	color: white;
+	padding: 10px 0 0 10px;
+	width: 160px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#relative{
+	width: 170px;
+	height: 150px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.ten{	
+	width: 170px;
+	height: 30px;
+	background-color: #e9e9e98a;
+}
+
+.ten b{
+	margin-left: 5px;
+}
+
+img{
+	width: 170px;
+	height: 120px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#menuButton{
+	margin-left: 30px;
+	margin-top: 230px;
+}
+
+#menuButton b{
+	float: left;
+}
+
+
+#menuButton u{
+	float: left;
+	margin-left: 40px;
+	color: blue;
+	list-style: none;
+}
+
+#menuButton u:hover{
+	color: #2fff00;
+}
