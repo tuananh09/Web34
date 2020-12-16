@@ -103,6 +103,10 @@
 	border-bottom-left-radius: 5px;
 }
 
+#absolute .a1:hover{
+	color: red;
+}
+
 #relative{
 	width: 170px;
 	height: 150px;

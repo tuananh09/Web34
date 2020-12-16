@@ -26,15 +26,30 @@
 	border-left:1px solid #618d04;
 }
 #menu>li:hover{
-	background-color: red;
+	background-color: #78b43d;
 }
 
+img{
+	width: 90px;
+	height: 38px;
+}
+
+#menu .gachnho{
+	height: 20px;
+	margin-top: 10px;
+	line-height: 20px;
+	border-left: 2px solid #78b43d;
+}
+
+#menu .gachnho li{
+	position: relative;
+}
 .absolute{
 	position: absolute;
 	display: none;
-	width: 180px;
-	background-color: red;
-	left: -30px;
+	width: 200px;
+	background-color: #78b43d;
+	left: -100px;
 }
 
 .absolute>li{
@@ -59,7 +74,7 @@
 	width: 180px;
 	border-top: 1px solid #ccc;
 	top: 50px;
-	left: 180px;
+	left: 200px;
 }
 
 .absolute1>li{
@@ -81,14 +96,13 @@
 	position: absolute;
 	display: none;
 	width: 180px;
-	background-color: red;
 	left:0; 
 }
 
 .absolute2>li{
 	background-color: #99dd09;
 	list-style: none;
-	padding: 0px 10px;
+	padding: 10px 5px 10px 5px;
 	border-bottom: 1px solid #ccc;
 }
 
