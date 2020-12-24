@@ -563,6 +563,7 @@
 	display: flex;
 	align-items: center;
 	float: left;
+	padding-left: 20px;
 }
 #editimg .editright .list1 .business-text>div{
 	font-size: 18px;
@@ -602,6 +603,7 @@
 	height: 100%;
 	display: flex;
 	align-items: center;
+	padding-left: 20px;
 	float: left;
 }
 #editimg .editright .list2 .business-text>div{
