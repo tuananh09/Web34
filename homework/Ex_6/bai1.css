@@ -280,36 +280,3 @@ header{
 }
 
 /*responsive*/
-@media only screen and (max-width:480px) {
-	header {
-		width: 100%;
-		padding: 0;
-	}
-	.box1 {
-		width: 100%;
-	}
-	.anh1{
-		width: 100%;
-	}
-	.anh2{
-		width: 100%;
-	}
-	.anh3{
-		width: 100%;
-	}
-	.anh4{
-		width: 100%;
-	}
-	.anh5{
-		width: 100%;
-	}
-	.anh6{
-		width: 100%;
-	}
-	.about{
-		width: 100%;
-	}
-	.say{
-		width: 100%;
-	}
-}
