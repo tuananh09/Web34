@@ -534,12 +534,218 @@ img:hover{
 	height: 100px;
 	background-color: #2196f317; 
 	margin-top: 5%;
-	position: relative;
+	text-align: center;
+}
+#footer .icon{
+	padding-top: 1%;
 }
 #footer > p{
-	padding-top: 6%;
- 	text-align: center;
+	padding-top: 1%;
+	text-align: center;
 }
 
 
+@media screen and (min-width: 320px) and (max-width: 479px){
+	header img{
+		margin-top: 30px;
+	}
+
+	ul{
+		display: none;
+	}
+
+	header .vip{
+		position: absolute;
+		top: 1%;
+		left: 3%;
+		font-weight: bold;
+		font-size: 20px;
+		color: blue;
+	}
+
+	header .hello {
+		position: absolute;
+		top: 20%;
+		left: 10%;
+		font-size: 25px;
+	}
+	header .i_am {
+		position: absolute;
+		top: 26%;
+		left: 10%;
+		font-size: 17px;
+	}
+	#conten1 {
+		width: 100%;
+		height: 900px;
+		margin: 0 auto;
+		margin-top: 5%;
+	}
+	#conten1 nav {
+		width: 100%;
+		text-align: center;
+	}
+	#conten1 article {
+		width: 100%;
+	}
+	#conten1 article img {
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	#conten1 nav .nav_text3 {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.nav_text3 > img{
+
+	}
+
+	#conten2 {
+		width: 100%;
+		height: 600px;
+		text-align: center;
+	}
+	.conten2_top {
+		width: 100%;
+		height: 25%;
+	}
+	#conten2 .vach .html {
+		width: 100%;
+	}
+	#conten2 .vach {
+		width: 90%;
+		margin: 0;
+	}
+
+	#conten4 {
+		width: 100%;
+		height: 900px;
+	}
+	#conten4 .boder {
+		width: 90%;
+	}
+	#conten4 .boder .div1 {
+		width: 100%;
+	}
+
+	#conten5 {
+		width: 100%;
+		height: 250px;
+	}
+	.conten5_top {
+		width: 100%;
+		height: 50%;
+	}
+	#conten5 .conten5_top > .text2 {
+		font-size: 85px;
+	}
+	#conten5 .conten5_top > .text1 {
+		top: 35%;
+		width: 100%;
+		font-size: 29px;
+	}
+	#conten5 .conten5_bottom div {
+		padding-left: 22px;
+		margin-left: 0;
+	}
+	
+	#conten6 {
+		width: 100%;
+		height: 1100px;
+	}
+	#conten6 > div > img {
+		width: 100%;
+		padding-bottom: 15%;
+	}
+
+	.conten7_bottom {
+		width: 100%;
+		padding-top: 10%;
+	}
+	.conten7_left {
+		width: 100%;
+		height: 160px;
+	}
+	.left {
+		clear: both;
+		position: relative;
+		width: 49%;
+		height: 100%;
+		float: left;
+	}
+	.conten7_right {
+		display: none;
+	}
+	.right {
+		width: 100%;
+		height: 100%;
+		float: right;
+		margin-top: 5%;
+	}
+	.right > .jone, .text_conten7 {
+		padding-left: 5%;
+	}
+
+	#conten8 {
+		width: 100%;
+		height: 1493px;
+	}
+	.conten8_top {
+		width: 100%;
+		height: 12%;
+	}
+	#conten8 .conten8_top > .text2 {
+		top:15%;
+		font-size: 102px;
+	}
+	#conten8 .conten8_top > .text1 {
+		top:42%;
+	}
+	#conten8 .conten8_bottom {
+		width: 100%;
+	}
+	#conten8 .conten8_bottom .left_8 {
+		width: 100%;
+		padding-bottom: 10%;
+	}
+	
+	#conten9 {
+		height: 850px;
+	}
+	#conten9 .conten9_nho {
+		width: 100%;
+	}
+	.nho_9 {
+		width: 100%;
+	}
+
+	.content-botton {
+		width: 100%;
+	}
+	.title-botton2 {
+		padding-top: 10px;
+	}
+	.text1-left {
+		width: 100%;
+		clear: both;
+	}
+	.text1-right {
+    width: 100%;
+   	clear: both;
+	}
+
+	.mess .send {
+    width: 70%;
+    margin-left: 19%;
+	}
+
+	#footer > p {
+    padding-top: 1%;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px;) {
+	
+}
 
