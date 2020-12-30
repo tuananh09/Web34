@@ -204,7 +204,7 @@ header .i_am{
 	margin-top: 5%;
 }
 .div1 img{
-	padding-top: 20%;
+	margin-top: 20%;
 }
 .div1 > p{
 	font-size: 20px;
@@ -721,7 +721,7 @@ img:hover{
 	}
 
 	.content-botton {
-		width: 100%;
+		width: 90%;
 	}
 	.title-botton2 {
 		padding-top: 10px;
@@ -745,7 +745,30 @@ img:hover{
 	}
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px;) {
-	
+@media screen and (min-width: 480px) and (max-width: 768px) {
+	header .vip {
+    position: absolute;
+    top: 4%;
+    left: 38%;
+}
+
+header ul {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    }
+header ul li {
+    float: left;
+    font-size: 13px;
+    padding-left: 5%;
+}
+header .hello {
+    top: 24%;
+    left: 10%;
+    font-size: 38px;
+    }
+    header .i_am {
+    	    top: 33%;
+}
 }
 
