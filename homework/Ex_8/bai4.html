@@ -7,16 +7,16 @@
 </head>
 <body>
 	<script type="text/javascript">
-		var numbA = prompt('Nhập vào số N')
-		var numbB = prompt('Nhập vào số M')
+		var numbN = prompt('Nhập vào số N')
+		var numbM = prompt('Nhập vào số M')
 		var numbK = prompt('Nhập vào số K')
 		var s=0;
-		for (var i = numbA; i <= numbB; i++) {
+		for (var i = numbN+1; i < numbM; i++) {
 			if (i%numbK==0) {
 				s+=i;
 			}	
 		}
-		document.write('Tổng của dãy số là: S = '+s)
+		document.write('Tổng của dãy số chia hết cho k là: S = '+s)
 	</script>
 </body>
 </html>
