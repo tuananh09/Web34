@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p id="the_p" class="a">Hi ae !!!</p>
+	<p class="a">Xin chao !!!</p>
+	<p>liu liu</p>
+	<b class="className">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, repudiandae?</b>
+	<input id="input1" type="text" name="">
+	<script>
+		var p = document.getElementById('the_p')
+		p.style.color = 'red';
+		var className = document.getElementsByClassName("a")[1];
+		className.style.color = 'blue';
+		var tagName = document.getElementsByTagName('p');
+		console.log(tagName);
+
+		var input1 = document.getElementById('input1');
+		console.log(input1.type);
+		input1.type = "password";
+
+		var b = document.getElementsByTagName("b")[0];
+		console.log(b);
+		b.style.color = "red";
+		b.style.fontSize = '50px';
+	</script>
+</body>
+</html>

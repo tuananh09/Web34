@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài 1</title>
+	<style>
+		#main{
+			width: 80%;
+			height: 300px;
+			margin: 0 auto;
+			background-image: url('img.jpg');
+		}
+
+		.content{
+			width: 90%;
+			height: 90%;
+			margin: 0 auto;
+		}
+
+		.tablink {
+			background-color: #8f8d8d;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			margin-top: 4%;
+			font-size: 17px;
+		}
+
+		.tablink:hover {
+			background-color: #fff;
+			color: black;
+		}
+
+		.tabcontent {
+			padding: 20px;
+		}
+
+		#Tab1{
+			background-color: #fff;
+		}
+		#Tab2{
+			background-color: #fff;
+		}
+		#Tab3{
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div class="content">
+			<button class="tablink" onclick="openCity('Tab1', this, '#fff')" id="defaultOpen">Tab1</button>
+			<button class="tablink" onclick="openCity('Tab2', this, '#fff')">Tab2</button>
+			<button class="tablink" onclick="openCity('Tab3', this, '#fff')">Tab3</button>
+			<div id="Tab1" class="tabcontent">
+				<h3>Section 1</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Nemo, at eius, ducimus debitis perspiciatis suscipit officia nulla libero itaque, rerum placeat nisi. Exercitationem, odio, alias. Error, corrupti libero deserunt nemo odio fuga minima velit, pariatur. Recusandae porro, animi, id voluptates et placeat corporis vel molestiae. Culpa libero dolores ea consequuntur?</p>
+			</div>
+
+			<div id="Tab2" class="tabcontent">
+				<h3>Section 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Nemo, at eius, ducimus debitis perspiciatis suscipit officia nulla libero itaque, rerum placeat nisi. Exercitationem, odio, alias. Error, corrupti libero deserunt nemo odio fuga minima velit, pariatur. Recusandae porro, animi, id voluptates et placeat corporis vel molestiae. Culpa libero dolores ea consequuntur?</p>
+			</div>
+
+			<div id="Tab3" class="tabcontent">
+				<h3>Section 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Nemo, at eius, ducimus debitis perspiciatis suscipit officia nulla libero itaque, rerum placeat nisi. Exercitationem, odio, alias. Error, corrupti libero deserunt nemo odio fuga minima velit, pariatur. Recusandae porro, animi, id voluptates et placeat corporis vel molestiae. Culpa libero dolores ea consequuntur?</p>
+			</div>
+
+			<script>
+				function openCity(cityName,elmnt,color) {
+					var i, tabcontent, tablinks;
+					tabcontent = document.getElementsByClassName("tabcontent");
+					for (i = 0; i < tabcontent.length; i++) {
+						tabcontent[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablink");
+					for (i = 0; i < tablinks.length; i++) {
+						tablinks[i].style.backgroundColor = "";
+					}
+					document.getElementById(cityName).style.display = "block";
+					elmnt.style.backgroundColor = color;
+				}
+				document.getElementById("defaultOpen").click();
+			</script>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài 3</title>
+	<style type="text/css">
+		body{
+			width: 80%;
+			margin: 0 auto;
+		}
+		div{
+			width: 400px;
+			height: 100px;
+			border: 2px solid #ccc;
+			padding-left: 2%;
+		}
+
+		input{
+			margin-left: 4%;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function editsize(font) {
+			var div = document.getElementById("font");
+			div.style.fontSize = font + "px";   
+		}
+	</script>
+
+	<div>
+		<h4>Cỡ Chữ</h4>
+		<input type="button" onclick="editsize(16)" value="Mặc định">
+		<input type="button" onclick="editsize(22)" value="Lớn">
+		<input type="button" onclick="editsize(7)" value="Nhỏ">
+	</div>
+	
+	<p id="font">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Id possimus architecto repellendus unde, consequatur in perferendis aliquam esse corrupti atque obcaecati earum, eos dolor illum, quia nobis quam nam optio odio? Accusamus, quae, temporibus! Quidem optio voluptates esse. Ipsam voluptates inventore saepe officiis consectetur magnam minus autem? At, reiciendis dignissimos vel sapiente molestiae. Suscipit fugit quis voluptas quo expedita, tenetur doloribus earum distinctio dolorum qui sequi et non, eum est quia sapiente ab esse sed. Quidem exercitationem autem cum doloremque accusantium vel excepturi hic, eius ut, nemo aspernatur necessitatibus officiis similique cumque sit labore dicta, sed. Vero veniam quaerat minus!</p>
+
+</body>
+</html>

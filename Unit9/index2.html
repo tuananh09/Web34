@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, asperiores.</p>
+	<button onclick="changeColor()">Change color</button>
+	<p id ="thep">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, dolor.</p>
+	<script>
+		//Cach 1
+	function changeColor () {
+		//b1: lấy ra thẻ p
+		document.getElementsByTagName("p")[0].style.color = 'red';
+		// //b2: thay màu cho thẻ p
+		// p.style.color = 'red';
+
+	}
+
+	//Cach2 sử dụng phương thức addEvent
+	var thep = document.getElementById("thep");
+	//2.1
+	thep.addEventListener('click', changeColor);
+
+	//2.2
+	thep.addEventListener("mouseover", function(){
+		thep.style.color="blue";
+	});
+	thep.addEventListener("mouseout", function(){
+		thep.style.color="black";
+	});
+	</script>
+</body>
+</html>

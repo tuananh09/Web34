@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài 2</title>
+	<link rel="stylesheet" href="bai2.css">
+	<script type="text/javascript">
+		function SetAllCheckBoxes(FormName, FieldName, CheckValue)
+		{
+			if(!document.forms[FormName])
+				return;
+			var objCheckBoxes = document.forms[FormName].elements[FieldName];
+			if(!objCheckBoxes)
+				return;
+			var countCheckBoxes = objCheckBoxes.length;
+			if(!countCheckBoxes)
+				objCheckBoxes.checked = CheckValue;
+			else
+		
+		for(var i = 0; i < countCheckBoxes; i++)
+			objCheckBoxes[i].checked = CheckValue;
+		}
+</script>
+</head>
+<body>
+	<form method="GET" name="myForm" onsubmit="return false;">
+	<div id="content">
+		<div class="check">
+			<div class="input">
+				<input type="checkbox" name="myCheckbox" value="1" id="myCheckbox1">
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ad.</p>
+		</div>
+
+		<div class="check">
+			<div class="input">
+				<input type="checkbox" name="myCheckbox" value="2" id="myCheckbox2">
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ad.</p>
+		</div>
+
+		<div class="check">
+			<div class="input">
+				<input type="checkbox" name="myCheckbox" value="3" id="myCheckbox3">
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ad.</p>
+		</div>
+
+		<div class="check">
+			<div class="input">
+				<input type="checkbox" name="myCheckbox" value="4" id="myCheckbox4">
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ad.</p>
+		</div>
+
+		<div class="check">
+			<div class="input">
+				<input type="checkbox" name="myCheckbox" value="5" id="myCheckbox5">
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ad.</p>
+		</div>
+
+		<div class="check">
+			<div class="input">
+				<input type="checkbox" name="myCheckbox" value="6" id="myCheckbox6">
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ad.</p>
+		</div>
+
+		<div class="check">
+			<div class="input">
+				<input type="checkbox" name="myCheckbox" value="7" id="myCheckbox7">
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ad.</p>
+		</div>
+
+		<div class="check">
+			<div class="input">
+				<input type="checkbox" name="myCheckbox" value="8" id="myCheckbox8">
+			</div>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ad.</p>
+		</div>
+	</div>
+
+	<div class="footer">
+		<u href="" onclick="SetAllCheckBoxes('myForm', 'myCheckbox', true)">Check all</u>
+		<u href="" onclick="SetAllCheckBoxes('myForm', 'myCheckbox', false)">Uncheck all</u>
+	</div>
+</form>
+</body>
+</html>
