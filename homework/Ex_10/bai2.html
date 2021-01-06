@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài 2 - Form Đăng Kí</title>
+	<style>
+		*{
+			margin: 0;
+		}
+		header{
+			width: 80%;
+			height: 320px;
+			margin: auto;
+			border: 2px solid black;
+			border-radius: 10px;
+		}
+		h2{
+			text-align: center;
+			margin: 10px;
+		}
+
+		.left{
+			width: 20%;
+			float: left;
+		}
+		p{
+			margin: 22px;
+		}
+
+		.center{
+			width: 50%;
+			float: left;
+		}
+		input{
+			width: 100%;
+			margin-top: 4%;
+			
+		}
+
+		.right{
+			width: 30%;
+			float: left;
+		}
+		span{
+			margin-top: 10%;
+		}
+		.error{
+			color: red;
+			float: right;
+			padding-right: 15%;
+		}
+
+
+		.gTinh > input{
+			width: 4%;
+    		margin: 3% 0 0 0;
+    	}
+		.footer{
+			width: 80%;
+			margin: auto;
+		}
+		#btn{
+			background-color: red;
+			font-weight: bold;
+			font-size: 15px;
+			color: #fff;
+			margin: 3% 60% 0 5%;
+		}
+		#delete{
+			background-color: red;
+			font-weight: bold;
+			font-size: 15px;
+			color: #fff;
+		}
+		#btn:hover , #delete:hover{
+			background-color: #ccc;
+			cursor: pointer;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h2>From Đăng kí</h2>
+		<div class="left">
+			<p>Họ và tên</p>
+			<p>Giới tính</p>
+			<p>Email</p>
+			<p>Số điện thoại</p>
+			<p>Mật khẩu</p>
+			<p>Xác nhận mật khẩu</p>
+		</div>
+
+		<div class="center">
+			<input type="text" id="name" placeholder="Nhập họ và tên...">
+			<div class="gTinh">
+				<input name="gt" type="radio">Nam
+				<input name="gt" type="radio">Nữ
+			</div>
+			<input type="text" id="email" placeholder="Nhập email...">
+			<input type="text" id="sdt" placeholder="Nhập số điện thoại...">
+			<input type="password" id="password">	
+			<input type="password" id="pass">		
+		</div>
+		<div class="right">
+			<span class="error">Yêu cầu nhập họ tên đầy đủ !</span>
+			<span></span>
+			<span class="error">Yêu cầu nhập email !</span>
+			<span class="error">Yêu cầu nhập số điện thoại !</span>
+			<span class="error">Yêu cầu nhập mật khẩu !</span>
+			<span class="error">Yêu cầu xác nhận mật khẩu !</span>
+		</div>
+	</header>
+	<div class="footer">
+		<button id="btn">Đăng kí</button>
+		<button id="delete">Xoá trắng</button>
+	</div>
+	<script type="text/javascript">
+		var err = document.getElementsByClassName("error");
+		var btn = document.getElementById("btn");
+		for (var i = 0; i < err.length; i++) {
+			err[i].style.display = 'none';
+		}
+		document.getElementById("name").addEventListener("keyup", function(){
+			if(document.getElementById("name"). value == ""){
+				err[0].style.display = 'block';
+			}else {
+				err[0].style.display = 'none';
+			}
+		});
+		btn.addEventListener("click", function(){
+			if(name.value = ""){
+				err[0].style.display = 'block';
+			}else {
+				err[0].style.display = 'none';
+			}
+		})
+
+		document.getElementById("email").addEventListener("keyup", function(){
+			if(document.getElementById("email"). value == ""){
+				err[1].style.display = 'block';
+			}else {
+				err[1].style.display = 'none';
+			}
+		});
+		btn.addEventListener("click", function(){
+			if(email.value = ""){
+				err[1].style.display = 'block';
+			}else {
+				err[1].style.display = 'none';
+			}
+		})
+
+		document.getElementById("sdt").addEventListener("keyup", function(){
+			if(document.getElementById("sdt"). value == ""){
+				err[2].style.display = 'block';
+			}else {
+				err[2].style.display = 'none';
+			}
+		});
+		btn.addEventListener("click", function(){
+			if(sdt.value = ""){
+				err[2].style.display = 'block';
+			}else {
+				err[2].style.display = 'none';
+			}
+		})
+
+		document.getElementById("password").addEventListener("keyup", function(){
+			if(document.getElementById("password"). value == ""){
+				err[3].style.display = 'block';
+			}else {
+				err[3].style.display = 'none';
+			}
+		});
+		btn.addEventListener("click", function(){
+			if(password.value = ""){
+				err[3].style.display = 'block';
+			}else {
+				err[3].style.display = 'none';
+			}
+		})
+
+		document.getElementById("pass").addEventListener("keyup", function(){
+			if(document.getElementById("pass"). value == ""){
+				err[4].style.display = 'block';
+			}else {
+				err[4].style.display = 'none';
+			}
+		});
+		btn.addEventListener("click", function(){
+			if(pass.value = ""){
+				err[4].style.display = 'block';
+			}else {
+				err[4].style.display = 'none';
+			}
+		})
+	</script>
+</body>
+</html>

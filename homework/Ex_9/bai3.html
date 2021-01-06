@@ -8,6 +8,7 @@
 		body{
 			width: 80%;
 			margin: 0 auto;
+			font-size: 16px;
 		}
 		div{
 			width: 400px;
@@ -23,21 +24,28 @@
 	</style>
 </head>
 <body>
-	<script type="text/javascript">
-		function editsize(font) {
-			var div = document.getElementById("font");
-			div.style.fontSize = font + "px";   
-		}
-	</script>
 
 	<div>
 		<h4>Cỡ Chữ</h4>
-		<input type="button" onclick="editsize(16)" value="Mặc định">
-		<input type="button" onclick="editsize(22)" value="Lớn">
-		<input type="button" onclick="editsize(7)" value="Nhỏ">
+		<button id="default1">Mặc định</button>
+		<button id="big">Lớn</button>
+		<button id="small">Nhỏ</button>
 	</div>
 	
 	<p id="font">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Id possimus architecto repellendus unde, consequatur in perferendis aliquam esse corrupti atque obcaecati earum, eos dolor illum, quia nobis quam nam optio odio? Accusamus, quae, temporibus! Quidem optio voluptates esse. Ipsam voluptates inventore saepe officiis consectetur magnam minus autem? At, reiciendis dignissimos vel sapiente molestiae. Suscipit fugit quis voluptas quo expedita, tenetur doloribus earum distinctio dolorum qui sequi et non, eum est quia sapiente ab esse sed. Quidem exercitationem autem cum doloremque accusantium vel excepturi hic, eius ut, nemo aspernatur necessitatibus officiis similique cumque sit labore dicta, sed. Vero veniam quaerat minus!</p>
+	<script type="text/javascript">
+			var default1 = document.getElementById("default1");
+			var big = document.getElementById("big");
+			var small = document.getElementById("small");
+
+			var font = document.getElementById("font");
+			var fontSize = 0;
+
+			small.addEventListener('click',function(){
+				fontSize -= 40;
+				font.style.fontSize = (fontSize+100) +"%";
+			})
+	</script>
 
 </body>
 </html>

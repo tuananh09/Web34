@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tab</title>
+	<style>
+		.content{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<button class="btn">Tab1</button>
+		<p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, fuga, cumque ullam laudantium ducimus modi fugiat ea ipsum deserunt tempora omnis corrupti sequi vero! Magnam deleniti est soluta tenetur pariatur.</p>
+	</div>
+	<div>
+		<button class="btn">Tab2</button>
+		<p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, fuga, cumque ullam laudantium ducimus modi fugiat ea ipsum deserunt tempora omnis corrupti sequi vero! Magnam deleniti est soluta tenetur pariatur.</p>
+	</div>
+	<div>
+		<button class="btn">Tab3</button>
+		<p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, fuga, cumque ullam laudantium ducimus modi fugiat ea ipsum deserunt tempora omnis corrupti sequi vero! Magnam deleniti est soluta tenetur pariatur.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ipsa. Iti ut harum aut, inventore porro temporibus atque exercitationem vero eum magni facilis, aperiam eos sint facere. Labore vel, impedit.</p>
+	</div>
+
+    <script>
+         var btn = document.getElementsByClassName("btn");
+         var content = document.getElementsByClassName("content");
+         for (var i = 0; i <btn.length; i++) {
+         	btn[i].addEventListener("click", function(){
+         		for (var i = 0; i <content.length; i++) {
+         		content[i].style.display = "none";
+         	}
+         		this.nextElementSibling.style.display = 'block';
+         	})
+         }
+    </script>
+</body>
+</html>
