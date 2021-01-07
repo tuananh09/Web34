@@ -13,7 +13,7 @@
 			height: 320px;
 			margin: auto;
 			border: 2px solid black;
-			border-radius: 10px;
+			border-radius: 20px;
 		}
 		h2{
 			text-align: center;
@@ -47,15 +47,15 @@
 		}
 		.error{
 			color: red;
-			float: right;
-			padding-right: 15%;
+			float: left;
+			padding-left: 15%;
 		}
 
 
 		.gTinh > input{
 			width: 4%;
-    		margin: 3% 0 0 0;
-    	}
+			margin: 3% 0 0 0;
+		}
 		.footer{
 			width: 80%;
 			margin: auto;
@@ -65,15 +65,15 @@
 			font-weight: bold;
 			font-size: 15px;
 			color: #fff;
-			margin: 3% 60% 0 5%;
+			margin: 3% 30% 0 28%;;
 		}
-		#delete{
+		#reset{
 			background-color: red;
 			font-weight: bold;
 			font-size: 15px;
 			color: #fff;
 		}
-		#btn:hover , #delete:hover{
+		#btn:hover , #reset:hover{
 			background-color: #ccc;
 			cursor: pointer;
 			color: black;
@@ -114,88 +114,75 @@
 	</header>
 	<div class="footer">
 		<button id="btn">Đăng kí</button>
-		<button id="delete">Xoá trắng</button>
+		<button id="reset">Xoá trắng</button>
 	</div>
 	<script type="text/javascript">
 		var err = document.getElementsByClassName("error");
-		var btn = document.getElementById("btn");
+		var count=0;
 		for (var i = 0; i < err.length; i++) {
-			err[i].style.display = 'none';
+			err[i].textContent = '';
 		}
-		document.getElementById("name").addEventListener("keyup", function(){
-			if(document.getElementById("name"). value == ""){
-				err[0].style.display = 'block';
+		var name = document.getElementById("name").addEventListener("keyup", function(){
+			if(document.getElementById("name").value.length < 8) {
+				err[0].textContent = 'Ten chua hop le';
 			}else {
-				err[0].style.display = 'none';
+				err[0].textContent = '';
+				count++;
 			}
 		});
-		btn.addEventListener("click", function(){
-			if(name.value = ""){
-				err[0].style.display = 'block';
-			}else {
-				err[0].style.display = 'none';
-			}
-		})
 
 		document.getElementById("email").addEventListener("keyup", function(){
-			if(document.getElementById("email"). value == ""){
-				err[1].style.display = 'block';
+			var ktra = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			if(email.value == "" || !ktra.test(email.value)){
+				err[1].textContent = 'Email chua hop le';
 			}else {
-				err[1].style.display = 'none';
+				err[1].textContent = '';
+				count++;
 			}
 		});
-		btn.addEventListener("click", function(){
-			if(email.value = ""){
-				err[1].style.display = 'block';
-			}else {
-				err[1].style.display = 'none';
-			}
-		})
 
-		document.getElementById("sdt").addEventListener("keyup", function(){
-			if(document.getElementById("sdt"). value == ""){
-				err[2].style.display = 'block';
+		var sdt = document.getElementById("sdt").addEventListener("keyup", function(){
+			var ktra = /[0-9]/;
+			if(phone.value == "" || !ktra.test(phone.value)){
+				err[2].textContent = 'Số điện thoại k hợp lệ !';
 			}else {
-				err[2].style.display = 'none';
+				err[2].textContent = '';
+				count++;
 			}
 		});
-		btn.addEventListener("click", function(){
-			if(sdt.value = ""){
-				err[2].style.display = 'block';
+		
+		var password = document.getElementById("password").addEventListener("keyup", function(){
+			if(password.value == '' || password.value.length < 6){
+				err[3].textContent = 'Password không hơp lệ !';
 			}else {
-				err[2].style.display = 'none';
+				err[3].textContent = '';
+				count++;
 			}
-		})
+		});
 
-		document.getElementById("password").addEventListener("keyup", function(){
-			if(document.getElementById("password"). value == ""){
-				err[3].style.display = 'block';
+		var pass =document.getElementById("pass").addEventListener("keyup", function(){
+			if(pass.value != password.value){
+				err[4].textContent = 'Password không khớp !';
 			}else {
-				err[3].style.display = 'none';
+				err[4].textContent = '';
+				count++;
 			}
 		});
-		btn.addEventListener("click", function(){
-			if(password.value = ""){
-				err[3].style.display = 'block';
-			}else {
-				err[3].style.display = 'none';
+		
+		var btn =document.getElementById('btn').addEventListener("click", function(){
+			if(count==5){
+				alert('Đăng kí thành công !')
 			}
-		})
+			else{
+				alert('Đăng kí thất bại !')
+			}
+		});
 
-		document.getElementById("pass").addEventListener("keyup", function(){
-			if(document.getElementById("pass"). value == ""){
-				err[4].style.display = 'block';
-			}else {
-				err[4].style.display = 'none';
-			}
+		var reset = document.getElementById('reset').addEventListener("click", function(){
+			var inputFieldNames = ["name", "email", "sdt", "password", "pass"];
+			var inputFields = inputFieldNames.map(ele => document.getElementById(ele));
+			inputFields.forEach(ele => ele.value = "");	
 		});
-		btn.addEventListener("click", function(){
-			if(pass.value = ""){
-				err[4].style.display = 'block';
-			}else {
-				err[4].style.display = 'none';
-			}
-		})
 	</script>
 </body>
 </html>
