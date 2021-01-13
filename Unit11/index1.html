@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<style type="text/css">
+		.cal{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quas! Excepturi exercitationem culpa doloremque deserunt nemo rerum omnis, quia quo!</p>
+	<div></div>
+	<h1 id="the1">Chao 500 ae !</h1>
+	<h1 id="the2">Chao 500 ae !</h1>
+
+	<h3 id="theh3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, excepturi?</h3>
+	<h3 id="theh32">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, excepturi?</h3>
+
+	<script>
+		$(document).ready(function(){
+			$("p").css({"font-size":"30px", "color":"red"})
+			$("div").css({
+				"width":"200px",
+				"height":"300px",
+				"background":"blue"
+			})
+
+			$("#the1").remove(); //Xoá tất cả
+			$("#the2").empty();	//Xoá conten
+
+			$("#theh3").prepend("lew lew");//thêm nd vào phía trc
+			$("#theh32").before("lew lew");// thêm nd phía trên
+
+			$("#theh3").append("lew lew sau");
+			$("#theh32").after("lew lew sau");
+
+			$("#theh3").addClass("cal");	//add class
+			$("#theh3").removeClass("cal");	//xoá class
+			$("#theh32").toggleClass("cal");	//tự động thêm nếu chưa có, xoá nếu đã có
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài 1</title>
+	<link rel="stylesheet" href="bai1.css">
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="content">
+			<div id="step1" class="step active">
+				<p class="a">1. <span>Account</span></p>
+				<div>
+					User name *<br>
+					<input type="text" id="username" name="" value="">
+					<span class="error"></span><br><br>
+
+					Password *<br>
+					<input type="password" id="password" name="" value="">
+					<span class="error"></span><br><br>
+					Confirm *<br>
+					<input type="password" id="confirm" name="" value="">
+					<span class="error"></span><br>
+				</div>
+			</div>
+
+			<div id="step2" class="step ">
+				<p class="a">2. <span>Profile</span></p>
+				<div>
+					First name *<br>
+					<input type="text" id="firstName" name="" value="">
+					<span class="error"></span><br><br>
+
+					Last name *<br>
+					<input type="text" id="lastName" name="" value="">
+					<span class="error"></span><br><br>
+
+					Email *<br>
+					<input type="email" id="email" name="" value="">
+					<span class="error"></span><br><br>
+
+					Address <br>
+					<input type="text" id="address" name="" value="">
+					<span class="error"></span><br><br>
+
+					Age (The warring step will show up if age is less than 18)*<br>
+					<input type="text" id="age" name="" value="">
+					<span class="error"></span><br>
+				</div>
+			</div>
+
+			<div id="step3" class="step ">
+				<p class="a">3. <span>Warning</span></p>
+				<div>
+					<legend>You are to young</legend>
+					<div>Click "Next".If you go on road.</div>
+				</div>
+			</div>
+
+			<div id="step4" class="step">
+				<p>4. <span>Finish</span></p>
+				<div>
+					<input type="checkbox" id="term" name="check" value="">You agree with the Terms and Conditions
+					<span class="er"></span>
+				</div>
+			</div>
+			<br>
+			<div class="button">
+				<span id="back">Previous</span>
+				<span id="next">Next</span>
+			</div>
+		</div>
+	</header>
+
+	<script type="text/javascript" src="js/bai1.js"></script>
+</body>
+</html>
