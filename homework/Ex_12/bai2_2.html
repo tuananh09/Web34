@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bài 2</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   <script type="text/javascript" src="../Ex_11/js/jquery-3.5.1.min.js"></script>
+   <link rel="stylesheet" href="bai2.css">
+   
+</head>
+<body>
+   <h2 style="text-align:center; color: blue;">Abum Ảnh</h2>
+
+   <div class="row">
+      <div class="column">
+         <img src="../Ex_10/img/portfolio3.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+         <img src="../Ex_10/img/portfolio5.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+         <img src="../Ex_10/img/movie.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+         <img src="../Ex_10/img/portfolio4.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+         <img src="../Ex_10/img/photo.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      </div>
+   </div>
+
+   <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+         <div class="mySlides">
+            <img src="../Ex_10/img/portfolio3.jpeg" style="width:100%">
+         </div>
+         <div class="mySlides">
+            <img src="../Ex_10/img/portfolio5.jpeg" style="width:100%">
+         </div>
+         <div class="mySlides">
+            <img src="../Ex_10/img/movie.jpg" style="width:100%">
+         </div>
+         <div class="mySlides">
+            <img src="../Ex_10/img/portfolio4.jpeg" style="width:100%">
+         </div>
+         <div class="mySlides">
+            <img src="../Ex_10/img/photo.jpg" style="width:100%">
+         </div>
+
+         <div class="caption-container">
+            <p id="caption"></p>
+         </div>
+
+         <div class="column">
+            <img class="demo cursor" src="../Ex_10/img/portfolio3.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Ảnh 1">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="../Ex_10/img/portfolio5.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Ảnh 2">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="../Ex_10/img/movie.jpg" style="width:100%" onclick="currentSlide(3)" alt="Ảnh 3">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="../Ex_10/img/portfolio4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Ảnh 4">
+         </div>
+         <div class="column">
+            <img class="demo cursor" src="../Ex_10/img/photo.jpg" style="width:100%" onclick="currentSlide(5)" alt="Ảnh 5">
+         </div>
+      </div>
+   </div>
+
+<script>
+   function openModal() {
+      document.getElementById("myModal").style.display = "block";
+   }
+
+   function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+   }
+
+   var slideIndex = 1;
+   showSlides(slideIndex);
+
+   function currentSlide(n) {
+      showSlides(slideIndex = n);
+   }
+
+   function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+            }
+         slides[slideIndex-1].style.display = "block";
+         dots[slideIndex-1].className += " active";
+         captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+   </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="../Unit11/js/jquery-3.5.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js" integrity="sha512-VjRpiWhUqdNa9bwBV7LnlG8CwsCVPenFyOQTSRTOGHw/tjtME96zthh0Vv9Itf3i8w4CkUrdYaS6+dAt1m1YXQ==" crossorigin="anonymous"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("button").eq(0).on("click", function(){
+				$("p").show();
+			});
+			$("button").eq(1).on("click", function(){
+				$("p").hide();
+			});
+			$("button").eq(2).on("click", function(){
+				$("p").toggle();
+			});
+			$("button").eq(3).on("click", function(){
+				$("div").fadeIn();
+			});
+			$("button").eq(4).on("click", function(){
+				$("div").fadeOut(5000);
+			});
+			$("button").eq(5).on("click", function(){
+				$("p").slideDown(10000);
+			});
+			$("button").eq(6).on("click", function(){
+				$("p").slideUp();
+			});
+			$("button").eq(7).on("click", function(){	
+				$("p").stop();
+			});
+
+			$("button").eq(8).on("click", function(){	
+				$("div").animate({
+					color:'red',
+					fontSize:"20px",
+					opacity: '0.5'
+				});
+			});
+		})
+
+	</script>
+
+	<style>
+		p{
+			border: 2px solid red;
+			padding: 10px;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			margin: 10px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body class="test">
+	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi recusandae, esse, officia natus numquam necessitatibus nihil qui aut odit, consectetur voluptatibus. Suscipit omnis quisquam assumenda dignissimos delectus quibusdam adipisci doloremque similique enim culpa, quis quasi ipsum tempore perferendis incidunt facilis possimus. Aperiam amet ipsam eligendi nam iure corporis non deleniti!</p>
+
+	<button>Show</button>
+	<button>Hide</button>
+	<button>Toggle</button>
+	<button>fadeIn</button>
+	<button>fadeOut</button>
+	<button>slideDown</button>
+	<button>slideUp</button>
+	<button>stop</button>
+	<button>Animate</button>
+	<div>
+		Hello babyyyyy !!!
+	</div>
+</body>
+</html>

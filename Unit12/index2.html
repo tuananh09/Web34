@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="../Unit11/js/jquery-3.5.1.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			// $("#thep").next().css({"color":"red"});
+			// $("#thep").prev().css({"color":"red"});
+			// $("#thep").siblings("h1").css({"color":"red"});
+
+			$("p").first().css({"color":"red"});
+			$("p").last().css({"color":"blue"});
+			$("p").eq(1).css({"color":"green"});
+			$("p").filter(".test2").css({"color":"yellow"});
+			$("p").not(".test2").css({"background":"#ccc"});
+		})
+	</script>
+</head>
+<body class="test">
+	<h1>Thẻ H1</h1>
+	<p>Thẻ P1</p>
+	<p id="thep">Thẻ P2</p>
+	<p>Thẻ P3</p>
+	<p class="test2">Test 21</p>
+	<p class="test2">Test 22</p>
+	<h4>Thẻ H4</h4>
+</body>
+</html>

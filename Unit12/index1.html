@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="../Unit11/js/jquery-3.5.1.min.js"></script>
+
+	<style type="text/css">
+		.test *{
+			display: block;
+			margin: 15px;
+			padding: 5px;
+			border: 2px solid #ccc;
+		}
+	</style>
+
+	<script>
+		$(document).ready(function(){
+
+			//parents từ con gọi cho các cha
+			// $("span").parentsUntil("div").css({"border-color":"red"});
+			
+			//find gọi từ cha xuống đến con
+			// $("div").find("span").css({"border-color":"red"});
+
+			//children gọi thành phần con trực tiếp
+			$("div").children("p").css({"border-color":"red"});
+			$("div").children("ul").css({"border-color":"blue"});
+		})
+	</script>
+</head>
+<body class="test">
+	<div> Thẻ Div
+		<ul>Thẻ ul
+			<li>Thẻ li
+				<span>Thẻ Span</span>
+			</li>
+		</ul>
+		<p>
+			Thẻ P
+		</p>
+	</div>
+</body>
+</html>

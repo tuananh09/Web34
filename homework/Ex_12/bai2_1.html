@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài 2</title>
+	<link rel="stylesheet" type="text/css" href="lightbox.min.css">
+	<script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		h1{
+			text-align: center;
+			color: blue;
+			margin: 30px 0 50px;
+		}
+		.content{
+			margin: 10px 50px;
+		}
+
+		.content img{
+			width: 220px;
+			height: 200px;
+			padding: 5px;
+			filter: grayscale(100%);
+			transition: 1s;
+		}
+		.content img:hover{
+			filter: grayscale(0);
+			transform: scale(1.1);
+		}
+	</style>
+</head>
+<body>
+	<script>
+
+	</script>
+		<h1 class="text">Album Ảnh</h1>
+
+		<div class="content">
+			<a href="img/portfolio3.jpeg" data-lightbox="mygallery" data-title="Photo_1">
+				<img src="img/portfolio3.jpeg">
+			</a>
+
+			<a href="img/portfolio5.jpeg" data-lightbox="mygallery" data-title="Photo_2">
+				<img src="img/portfolio5.jpeg">
+			</a>
+
+			<a href="img/movie.jpg" data-lightbox="mygallery" data-title="Photo_3">
+				<img src="img/movie.jpg">
+			</a>
+
+			<a href="img/portfolio4.jpeg" data-lightbox="mygallery" data-title="Photo_4">
+				<img src="img/portfolio4.jpeg">
+			</a>
+
+			<a href="img/photo.jpg" style="width: 100%; height:500px;" data-lightbox="mygallery" data-title="Photo_5">
+				<img src="img/photo.jpg">
+			</a>
+		</div>	
+
+</body>
+</html>

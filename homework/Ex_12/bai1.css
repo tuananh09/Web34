@@ -1,0 +1,242 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+
+header{
+	width: 100%;
+	height: 70px;
+	color: #fff;
+	background: linear-gradient(to right, #ff5722, #ff9800ad, #ff5722);
+}
+h3{
+	width: 30%;
+	line-height: 70px;
+	display: block;
+	float: left;
+	margin-left: 8%; 
+}
+header>ul{
+	width: 55%;
+	list-style: none;
+	float: right;
+	line-height: 70px;
+}
+header>ul>li{
+	float: left;
+	margin-right: 5%;
+	font-size: 20px;
+	position: relative; 
+}
+header>ul>li:hover{
+	color: red;
+	cursor: pointer;
+}
+
+header>ul>li:hover .menu{
+	display: block;
+	cursor: pointer;
+}
+.menu{
+	position: absolute;
+	display: none;
+	width: 180px;
+	left:0; 
+}
+
+.menu>li{
+	line-height: 40px;
+	width: 50%;
+	color: #fff;
+	background-color: #ff5822;
+	list-style: none;
+	padding: 0px 5px 10px 10px;
+	border-bottom: 1px solid #ccc;
+}
+.menu>li:hover{
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+/*<-------------->*/
+.text{
+	float: left;
+	font-size: 20px;
+	box-sizing: border-box;
+	line-height: 75%;
+	display: none;
+}
+.logo{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-image: url(img/travel.jpg);
+	background-size: 180%;
+	display: none;
+	text-align: center;
+	background-repeat: no-repeat;
+}
+.btn{
+	display: none;
+}
+.list-menu li i{
+	display: none;
+}
+
+/*<-------------->*/
+#content1{
+	width: 100%;
+	height: 50px;
+}
+#content1 p{
+	float: right;
+	margin-right: 8%;
+	line-height: 50px;
+}
+
+/*<-------------->*/
+#content2{
+	width: 100%;
+	height: 500px;
+	background: linear-gradient(to bottom, #ff9800ad, #ff5722);
+	text-align: center;
+	color: #fff;
+}
+.text1{
+	padding: 10% 0 5% 0;
+	font-weight: bold;
+	font-size: 60px;
+}
+.text2{
+	padding: 0 0 5% 0;
+	font-weight: bold;
+	font-size: 30px;
+}
+button{
+	height: 40px;
+	width: 200px;
+	color: white;
+	background-color: rgba(42,42,42,0.5);
+	border: 1px solid white;
+	cursor: pointer;
+}
+button:hover{
+	color: red;
+}
+
+.min{
+	width: 100%;
+	height: 500px;
+	display: none;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+
+/*Responsive*/
+/*<-------480px -> 769px------->*/
+@media screen and (min-width: 480px) and (max-width: 769px) {
+	header{
+		width: 100%;
+		height: 0;
+	}
+	h3{
+		display: none;
+	}
+	#content1, .text1, .text2, button{
+		display: none;
+	}
+	#content2{
+		background: linear-gradient(to bottom left, #ff9800ad, #ff5722);
+		height: 600px;
+	}
+	.text{
+		display: block;
+		width: 100%;
+		height: 250px;
+		text-align: center;
+	}
+	.logo {
+    	margin-top: 5%;
+    	display: block;
+    	margin-left: 40%;
+	}
+	.p1{
+		color: #fff;
+		font-size: 25px;
+		padding: 5%;
+	}
+	.p2{
+		color: #ccc;
+	}
+	header{
+		width: 100%;
+	}
+	header>ul {
+    width: 95%;
+    float: left;
+    line-height: 45px;
+    margin-left: 5%; 
+	}
+	header>ul>li{
+		height: 50px;
+		display: block;
+	    text-align: left;
+	    float: none;
+	    width: 100%;
+	}
+	.list-menu li i{
+		display: inline-block;
+	}
+	.menu li {
+	    position: relative;
+	    text-align: left;
+	    top: -20px;
+	    width: 30%;
+	    height: 30px;
+	    margin-left: 0;
+	}
+
+	.menu {
+	    display: none;
+	    margin-top: 20px;
+	    padding-left: 40px;
+	    width: 100%;
+	    box-sizing: border-box;
+	}
+	.btn{
+		display: block;
+	    border: 0px solid white;
+	    background-color: rgba(255,128,0,0.1);
+	    float: right;
+	}
+}
+
+
+/*<-------min_770px------->*/
+@media screen and (min-width: 770px) and (max-width: 1200px){
+	header>ul{
+		display: none;
+	}
+	#content1 p {
+    margin-right: 6%;
+	}
+	.text1{
+		font-size: 40px;
+	}
+	.text2{
+		font-size: 25px;
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 479px){
+	.text, header, #content1, #content2{
+		display: none;
+	}
+	.min{
+		display: block;
+	}
+	
+}
+	
